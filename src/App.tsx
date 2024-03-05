@@ -1,7 +1,12 @@
 import './App.css';
+import Navbar from './components/Navbar';
 
 const App = () => {
-	return <div className='text-5xl font-bold underline'>koinX</div>;
+	return (
+		<>
+			<Navbar />
+		</>
+	);
 };
 
 export default App;
