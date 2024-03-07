@@ -2,13 +2,13 @@ import koinxLogo from '../assets/koinx-logo.svg';
 
 const Navbar: React.FC = () => {
 	return (
-		<nav className='flex flex-row justify-between text-base font-medium text-zinc-950'>
+		<nav className='flex flex-row justify-between text-base font-medium text-zinc-950 bg-white px-20 py-4 sticky top-0 z-10 col-span-2'>
 			<img
 				src={koinxLogo}
 				alt='koinX Logo'
 			/>
-			<div className='flex flex-row items-center gap-5'>
-				<ul className='flex flex-row gap-5 items-center'>
+			<div className='flex flex-row items-center gap-7'>
+				<ul className='flex flex-row gap-7 items-center'>
 					<li>
 						<a href='#crypto-taxes'>Crypto Taxes</a>
 					</li>
