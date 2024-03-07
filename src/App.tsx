@@ -15,7 +15,7 @@ const App = () => {
 			<Navbar />
 			<div className='bg-[#eff2f5]  size-full relative grid grid-cols-[70vw,auto] gap-x-4 '>
 				Main Section
-				<main className='h-full ml-20 py-3 flex flex-col gap-4 relative'>
+				<main className='h-full ml-20 py-3 flex flex-col gap-4 relative col-start-1 col-end-2'>
 					<SelectedCoinCard coinId='bitcoin' />
 					<OverviewCard />
 					<SentimentCard />
