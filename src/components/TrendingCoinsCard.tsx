@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import { getTrendingCoins } from '../utils/coinGeckoAPI';
 import { useState, useEffect } from 'react';
@@ -9,7 +8,7 @@ const TrendingCoinsCard = () => {
 
 	useEffect(() => {
 		const fetchTrendingCoins = async () => {
-			const coins = await getTrendingCoins();
+			const coins: any = await getTrendingCoins();
 			setTrendingCoins(coins.coins.slice(0, 3));
 			console.log(coins.coins.slice(0, 3));
 		};
@@ -27,7 +26,10 @@ const TrendingCoinsCard = () => {
 						className='flex items-center gap-2 justify-between'
 					>
 						<div className='flex items-center gap-2'>
-							<img src={coin.item.thumb} className='rounded-full w-7'/>
+							<img
+								src={coin.item.thumb}
+								className='rounded-full w-7'
+							/>
 							<p className=''>{coin.item.name}</p>
 						</div>
 						<Ticker

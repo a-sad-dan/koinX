@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 
 const AboutCard = () => {
@@ -77,7 +76,7 @@ const AboutCard = () => {
 					</div>
 				</div>
 			</div>
-			<p className='mb-2 text-sm'> 
+			<p className='mb-2 text-sm'>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
 				voluptatum harum, mollitia quaerat exercitationem veniam quas rem nihil
 				soluta commodi neque, libero ex repellendus aspernatur nam cumque

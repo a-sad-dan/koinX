@@ -8,7 +8,7 @@ const SuggestedCoins: React.FC = () => {
 
 	useEffect(() => {
 		const fetchTrendingCoins = async () => {
-			const coins = await getTrendingCoins();
+			const coins: any = await getTrendingCoins();
 			setTrendingCoins(coins.coins.slice(0, 12));
 			console.log(coins.coins.slice(0, 12));
 		};
