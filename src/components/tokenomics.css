@@ -1,0 +1,16 @@
+.bullet::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+  display: block;
+  border-radius: 100%;
+}
+.bullet.orange::before
+{
+  background-color: orange;
+}
+
+.bullet.blue::before
+{
+  background-color: #0082ff;
+}
